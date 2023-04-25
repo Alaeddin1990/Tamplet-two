@@ -1,0 +1,2371 @@
+
+/* Start Variables */
+:root {
+--main-color: #dde21e;
+--transparent-color: #35e21e;
+--section-padding: 30px;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+html {
+scroll-behavior: smooth;
+}
+body {
+font-family: "Open Sans", sans-serif;
+}
+ul {
+list-style: none;
+}
+.container {
+padding-left: 60px;
+padding-right: 60px;
+margin-left: auto;
+margin-right: auto;
+}
+/* Small */
+@media 
+(min-width: 768px) {
+.container {
+width: 750px;
+}}
+
+/* Medium */
+@media 
+(min-width: 992px) {
+.container {
+width: 970px;
+}}
+
+/* Large */
+@media 
+(min-width: 1200px) {
+.container {
+width: 1170px;
+}} 
+
+/* 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+header{ 
+margin-bottom: 600px;} 
+    
+header .overlay { 
+position: absolute;
+width: 100%; 
+height: 80%;
+background-color: #020801a4;} 
+
+
+header .container  { 
+display: flex; 
+align-items: center;
+justify-content: space-between;
+position: relative;
+
+}
+header .container::after { 
+content: " ";
+background-color:var(--main-color);
+position: absolute;
+top: 95px;
+width: calc(100% - 150px);
+height: 1px;
+z-index: 0;
+
+}
+
+header .container  a img{ 
+    width: 170px;
+    margin-left: 0px;
+    }
+
+header  nav { 
+flex: 1;
+display: flex; 
+justify-content: flex-end;
+align-items: center;
+
+}
+header .container nav i { 
+color: white;
+font-size: 20px;
+
+}
+
+header .container nav i:hover + ul{
+position: absolute; 
+top:125% ;
+right:3% ;
+width: 130px;
+background-color: #40403e34;
+display: flex;
+flex-direction: column;
+}
+header .container nav i:hover + ul li a { 
+    border-bottom: #35e21e 1px solid;
+    position: relative; 
+    padding: 15px;
+}
+
+header .container  nav ul{ 
+display: flex; 
+
+}
+
+header .container  nav ul li a{
+display: block;
+color: var(--main-color);
+text-decoration: none;
+font-size: small;
+padding: 40px 10px;
+position: relative;
+z-index: 4;   
+
+    }
+header .container  nav ul li a:hover{ 
+    color: var(--transparent-color); 
+    border-bottom: #35e21e 1px solid; 
+}
+
+header .container  nav ul .active a{ 
+color: var(--transparent-color);
+}
+
+
+header .container .icon{ 
+border-left: 1px solid white;
+padding-left: 20px; 
+width: 70px;
+height: 40px;
+margin-left: 20px;
+
+    }
+
+header .container .icon i{ 
+ color: white;
+font-size: 20px; 
+text-align: center;
+position: relative;
+margin-left: 5px;
+top: 10px; } 
+
+ 
+header .imgd { 
+position: absolute;
+width: 100%;
+top: 0%;
+z-index: -1;
+height: 700px;
+}
+
+
+header #A { z-index: 1; 
+position: absolute;
+color: #dde21e;
+font-size:30px;
+left: 3%;
+top: 50%;}
+
+header #B { z-index: 5;
+position: absolute;
+color: #dde21e;
+font-size:30px;
+right: 3%;
+top: 50%;
+}
+
+header #C {  
+display: flex;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 4%;
+z-index: 5;
+}
+
+header #C  li{ 
+ width: 15px;
+ height: 15px;
+ border:var(--main-color) 1px solid;
+ border-radius: 50px;
+margin: 5px;
+z-index: 5;}
+
+
+header #C  .mitte{ 
+ background-color: var(--main-color);
+}
+
+@media 
+(max-width: 968px) {
+    
+header{margin-bottom: 500px;} 
+header .container{ top: 10px;}
+header .container  a img{ width: 120px;}
+header .container::after{top: 60px; }
+header .container nav i{ font-size: 13px; margin-right:-10px ;}
+header .container  nav ul{ display: none;}
+header .container .icon{ width: 50px; height: 20px; padding-left: 10px;}
+header .container .icon i{ font-size: 13px ; top: 0%; margin: 0%;}
+header .imgd { height: 550px;}
+header .container nav i:hover  ul{  display: block; background-color: #dde21e;}
+header  .move #C { top:200px ; left: 50%;}
+header  .move #C li{  width: 8px; height: 8px;}
+header  .move #B{  font-size: 15px;}
+header  .move #A {  font-size: 15px;}
+header  .move {  position: relative; top: 300px;}
+header .overlay {  height: 50%;}
+.container { padding-left: 20px; padding-right: 20px; margin-left: auto; margin-right: auto;}
+header .container::after { width: calc(100% - 40px); }}
+   
+      
+     
+@media 
+(max-width: 667px) { header  .move
+    {  position: relative; top: 280px;}
+}
+      
+        
+        
+   
+   
+   
+
+
+@media 
+(min-width:999px) {
+header .container nav i { display: none;}}
+       
+    
+    
+/* <!-- <== end header= ==> --> */
+/* <!-- <===========================================================================================================================>  --> */
+/* <!-- <== start landing ===> --> */
+
+
+.landing { 
+display: flex;
+position: absolute;
+top: 30%;
+width: 40%; 
+height: 300px;
+background-color: #35e21e1e;
+border-bottom-right-radius: 100px ;
+border-right:5px #35e21e3f solid;
+border-top:5px #35e21e3f solid;
+border-bottom:5px #35e21e3f solid;
+margin-bottom: 150px;
+}
+
+.landing .content {
+position: relative;
+height: 200px;
+display: flex; 
+flex-direction: column;
+justify-content:left ;
+color: var(--main-color);
+width: 50%;
+margin-left: 30%;
+margin-top: 2% ;
+margin-bottom: 20% ;
+  
+}
+
+.landing .content  h1{ 
+    line-height: 1.5;
+    font-family: "Combo";
+    width: 500px;}
+
+
+.landing .content  p{ 
+    font-family: "Combo";   
+     line-height: 1.5;
+    width: 400px;}
+   
+
+
+@media 
+(max-width: 768px) {
+.landing {width: 100%; height: 150px;  border: #35e21e3f 2px solid; border-radius: 5px; }
+.landing .content{width: 200px; height: 50%; text-align: center;  margin: auto; }
+
+.landing .content  h1{ width: 100%; font-size: 16px; margin-top: -17px;}
+.landing .content  p{ width: 190px; font-size: 12px; line-height: 1.2; margin-left: 7%;
+}}
+
+
+@media 
+(min-width:768px) {
+header .container nav i { display: none;}}
+       
+
+/* <!-- <== end landing= ==> --> */
+/* <!-- <===========================================================================================================================>  --> */
+/* <!-- <== start section===> --> */
+
+.service {
+height: 800px;
+ margin-bottom: 0px;
+ background-color:var(--main-color);} 
+ 
+.service .sce {
+text-align: center;
+padding-top: 60px;
+padding-bottom: 60px;} 
+
+.service .sce  h1{
+color: var(--transparent-color);
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 50px;
+position: relative;
+text-transform: uppercase;} 
+
+.service .sce  p{
+font-weight: 900;
+font-size:small;
+width: 30%;
+color:rgba(0, 0, 0, 0.347);
+margin: 0 auto 0px;
+max-width: 100%;} 
+
+.service .sce  h1::before{
+content: " ";
+position: absolute;
+height: 3px;
+width: 140px;
+background-color: #000;
+transform: translateX(-50%);
+left: 50%;
+bottom: -40%;
+} 
+.service .sce  h1::after{
+content: " ";
+position: absolute;
+width: 10px;
+height: 10px;
+background-color:var(--main-color);
+border: 3px solid #000;
+border-radius: 20px;
+transform: translateX(-50%);
+left: 50%;
+bottom: -50%;} 
+
+@media 
+(max-width: 768px) { 
+.service {height: 1300px;}   
+.service .sce  p{ margin: 0 auto 2px; width: 60%; font-size: 10px;} 
+.service .sce  h1{font-size: 30px; margin-bottom: 35px;}
+.service .sce  h1::before  {width: 80px;}
+.service .sce  h1::after  {width: 5px; height: 5px;}
+}
+    
+/* <!-- <== end section= ==> --> */
+/* <!-- <===========================================================================================================================>  --> */
+/* <!-- <== start service 2===> --> */
+
+
+
+
+.service  .container{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(350px,1fr) );
+justify-content: center;
+align-items: center;
+gap: 30px;
+height: 400px;
+margin-top: 0%; } 
+
+
+
+.service .container  i{
+font-size: 50px;
+margin-right: 50px;
+position: relative;
+top: 50px;
+} 
+.service .container  h3{
+color: var(--transparent-color);
+margin-bottom: 20px;
+line-height: 1;
+margin-left: 100px; 
+
+} 
+.service .container  p{
+line-height: 2;
+margin-left: 100px;
+
+} 
+
+@media 
+(max-width: 768px) { 
+.service  .container{text-align: center;}   
+.service .container  i{ font-size: 10px; margin: 0%; top: 0%; font-size: 30px; margin-bottom: 15px;} 
+.service .sce  h1{font-size: 30px; margin-bottom: 35px;}
+.service .container  p  {margin: 0%; margin-bottom: 20px;}
+.service .container  h3  {margin: 0%;margin-bottom: 5px;  }
+.text-content1  {border-bottom: 1px solid rgba(0, 0, 0, 0.21); }
+.text1 :nth-child(1) {margin-bottom: 30px; position: relative;}
+.text2 :nth-child(1) {margin-bottom: 30px; position: relative;}
+
+}
+
+ 
+/* <!-- <== end service= ==> --> */
+/* <!-- <===========================================================================================================================>  --> */
+/* <!-- <== start our design ===> --> */
+
+.our-design { 
+position: relative;
+margin-bottom: 0px;
+width: 100%;
+height: 600px;
+background-image: url(fotos/444.jpg);
+background-repeat: no-repeat;
+background-size: 100% 800px;
+background-position: center;
+}
+
+.our-design .text-content{ 
+background-color: #dbe21e5c;
+position: absolute;
+width: 40%;
+height:300px ;
+right: 0%;
+bottom: 150px;
+}
+.our-design .text-content .text{
+padding: 50px;
+margin-bottom: 20px;
+}
+.our-design .text-content .text h4 { 
+margin-bottom: 20px ;
+margin-top: 20px;
+
+}
+    
+.our-design .text-content .text h4 i  { 
+margin-right: 10px;
+
+    
+}
+@media (max-width: 768px)  {
+.our-design { height: 250px;  background-image: url(fotos/000.jpg); background-size: cover;}
+.our-design .text-content{ background-color:#dbe21e5c; width: 60%; height:125px ; right: 0%; bottom: 65px;}
+.our-design .text-content .text {  padding: 10px; margin-top: 5px; }
+.our-design .text-content .text h4 { margin-bottom: 5px ;    margin-top: 7px; font-size: 10px; }
+.our-design .text-content .text h2 {  font-size: 15px; }}
+
+
+
+ 
+/* <!-- <== end our design= ==> --> */
+/* <!-- <===========================================================================================================================>  --> */
+/* <!-- <== start portfolio ===> --> */
+       
+    
+    
+    
+.portfolio {
+height: 1000px;
+margin-bottom: 0px;
+background-color:var(--main-color);} 
+
+.portfolio-head  {
+text-align: center;
+padding-top: 60px;
+padding-bottom: 60px;} 
+
+.portfolio-head .por  h1{
+color: var(--transparent-color);
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 50px;
+position: relative;
+text-transform: uppercase;} 
+
+.portfolio-head .por  p{
+font-weight: 900;
+font-size:small;
+width: 30%;
+color:rgba(0, 0, 0, 0.347);
+margin: 0px auto 0px;
+max-width: 100%;} 
+
+.portfolio-head .por  h1::before{
+content: " ";
+position: absolute;
+height: 3px;
+width: 140px;
+background-color:#000;
+transform: translateX(-50%);
+left: 50%;
+bottom: -40%;
+} 
+.portfolio-head .por  h1::after{
+content: " ";
+position: absolute;
+width: 10px;
+height: 10px;
+background-color:var(--main-color);
+border: 3px solid #000;
+border-radius: 20px;
+transform: translateX(-50%);
+left: 50%;
+bottom: -50%;} 
+
+@media 
+(max-width: 768px) { 
+.portfolio {height: 1300px; margin-bottom: 1100px;}   
+.portfolio-head .por  { margin-bottom: -50px;} 
+.portfolio-head .por  p{ margin: 0 auto 2px; width: 60%; font-size: 10px;} 
+.portfolio-head .por  h1{font-size: 30px; margin-bottom: 35px;}
+.portfolio-head .por  h1::before  {width: 80px;}
+.portfolio-head .por  h1::after  {width: 5px; height: 5px;}
+}
+
+.por-list { 
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 40px;
+
+
+}
+.por-list p { 
+color: var(--transparent-color);
+margin-left: 20px;}
+
+.por-list .All { 
+width: 40px;
+height: 40px;
+background-color:#000; 
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 700;}
+
+
+.imag { 
+
+background-color: #dde21e;
+display: grid;
+gap: 0px;
+grid-template-columns: 
+repeat(auto-fill, minmax(350px,1fr)); 
+}
+
+
+.box { 
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+/* border: 5px solid var(--transparent-color);  */
+height: 250px;
+width:380px; ;    
+overflow: hidden;
+    }
+
+ @media(min-width: 900px)  {
+.imag .box {width: 100%;  overflow: hidden;} 
+.imag {grid-template-columns:repeat(auto-fill, minmax(305px,1fr)); 
+     }}
+ 
+ .imag 
+.box img,
+.box img,
+.box img,
+.box img,
+.box img,
+.box img,
+.box img,
+.box img {
+    transition: all 0.2s linear 0.1s ;
+     width:400px; 
+     height: 280px;
+    } 
+.imag img:hover { transform: scaleX(1.1) rotate(8deg); width: 450px; height: 350px; }
+
+.imag  .X {
+position: absolute;
+height: 25%; 
+width: 100%;
+background-color: rgba(255, 255, 0, 0.299);
+bottom: -100%;
+transition: 0.4s ;
+}
+.imag .box:hover .X{ bottom: 0%;}
+
+
+.imag  .box .X  h3{
+    padding-top: 15px; 
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;}
+
+.imag  .box .X  p{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+/* @media 
+(max-width: 768px) {
+.imag .box {max-width: 100%;} 
+.imag {margin-bottom: 10px;grid-template-columns:repeat(auto-fill, minmax(250px,1fr))}} */
+
+.portfolio .More { 
+width: 80px; 
+height: 40px;
+background-color: #35e21e;
+text-align: center;
+margin:40px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.portfolio .More a{
+color: #000;
+text-decoration: none; 
+font-weight: 900;
+font-size: 18px; }
+
+
+/* <!-- <== end portfolio= ==> --> */
+/* <!-- <===========================================================================================================================>  --> */
+/* <!-- <== start video ===> --> */
+
+.video-content { 
+position: relative;
+height: 650px ;
+margin-bottom: 0px; 
+background-color: rgba(119, 119, 119, 0.449);}
+
+.video-content video { 
+height: 100%;
+width: 100%;}
+
+.video-content .text{ 
+    background-color: #dbe21e5c;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom:225px;
+    z-index: 2;
+   
+}
+.video-content .text h2 {
+margin-bottom: 15px; } 
+
+.video-content .text p { 
+font-weight: 900;
+margin-bottom: 25px;
+width: 250px; 
+text-align: center;} 
+
+.video-content .text button { 
+color: #dde21e;
+background-color: #060706;
+width: 80px;
+height: 30px;} 
+
+.video-content .left   {
+
+position: absolute;
+width: 12%;
+height: 100%;
+background-color: var(--main-color);
+top: 0px;
+z-index: 5;
+
+}
+.video-content .right  { 
+position: absolute;
+width: 12%;
+height: 100%;
+background-color: var(--main-color);
+right: 0px;
+top: 0px;
+
+} 
+
+
+@media 
+(max-width: 768px) {
+.video-content {margin-top: 100px; height:250px ;} 
+.video-content  .text {bottom: 80px; height: 100px;} 
+.video-content  .text h2 {font-size: 15px; margin-top: 15px; margin-bottom: 10px;} 
+.video-content  .text p {font-size: 10px; width: 150px; margin-bottom: 10px;} 
+.video-content  .text button  {font-size: 10px;} 
+}
+
+
+
+ /* <!-- <== end video= ==> --> */
+/* <!-- <===========================================================================================================================>  --> */
+/* <!-- <== start About ===> --> */
+
+
+.about {
+height: 1500px;
+margin-bottom: 300px;
+background-color:white;} 
+
+.about-head  {
+text-align: center;
+padding-top: 60px;
+padding-bottom: 60px;} 
+
+.about-head .abo h1{
+color: var(--transparent-color);
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 50px;
+position: relative;
+text-transform: uppercase;} 
+
+.about-head .abo p{
+font-weight: 900;
+font-size:small;
+width: 30%;
+color:rgba(0, 0, 0, 0.347);
+margin: 0px auto 0px;
+max-width: 100%;} 
+
+.about-head .abo h1::before{
+content: " ";
+position: absolute;
+height: 3px;
+width: 140px;
+background-color:#000;
+transform: translateX(-50%);
+left: 50%;
+bottom: -40%;
+} 
+.about-head .abo h1::after{
+content: " ";
+position: absolute;
+width: 10px;
+height: 10px;
+background-color:var(--main-color);
+border: 3px solid #000;
+border-radius: 20px;
+transform: translateX(-50%);
+left: 50%;
+bottom: -50%;} 
+
+@media 
+(max-width: 768px) { 
+.about {height: 1000px;}   
+.about-head .abo { margin-bottom: -50px;} 
+.about-head .abo p{ margin: 0 auto 2px; width: 60%; font-size: 10px;} 
+.about-head .abo h1{font-size: 30px; margin-bottom: 35px;}
+.about-head .abo h1::before  {width: 80px;}
+.about-head .abo h1::after  {width: 5px; height: 5px;}
+}
+
+.about .pic img {
+width: fit-content;
+margin-left: 55%;
+margin-top: 30px;
+}
+
+.about .about-content { 
+position: relative;
+height: 450px;
+width: 100%; 
+top: -100px;
+background-image: url(fotos/11111111111.jpg);
+background-size: contain;
+background-repeat:repeat;
+background-position: center;
+} 
+
+.about .about-content .About-result { 
+position: absolute;
+width: 80%;
+height: 60%;
+left: 10%;
+bottom: 20%;
+background-color: #35e21e7b;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+ }
+ .about .about-content .About-result .A  { 
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column; } 
+
+ 
+.about .about-content .About-result .A i  {
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 15px;
+background-color: var(--main-color);
+width: 30px; 
+height: 30px;
+border-radius: 50px;
+}
+.about .about-content .About-result h1 {
+font-size: 35px;}
+.about .about-content .About-result p   { 
+font-size: 20px;
+font-weight: 900;
+} 
+
+@media 
+(max-width: 768px) { 
+.about .about-content  {max-width: 100%; top: -50px; height: 300px;}   
+.about .pic img {margin-left: 20%; max-width: 60%;} 
+.about .about-content .About-result{ width: 80%; height: 60%; left: 10%;} 
+.about .about-content .About-result .A i{font-size: 10px; width: 20px; height: 20px;}
+.about .about-content .About-result h1 {font-size:20px ;}
+.about .about-content .About-result p  {font-size: 10px;}
+}
+
+@media 
+(min-width: 769px) { 
+.about .pic img {margin-left: 25%; max-width: 60%;} }
+
+
+.about .container { 
+padding-bottom: 60px;
+display: grid; 
+grid-template-columns:repeat(auto-fill, minmax(350px,1fr));
+height: 600px;
+gap: 50px;
+line-height: 1.5;}
+
+.about .container .A  h2 {  margin-bottom: 40px; text-align: center; }  
+.about .container .A  p{   text-align: center;  margin-bottom: 40px;}  
+.about .container .A .A1 h3{ height: 30px;  background-image:linear-gradient( to left, #dde21e 15%,#35e21e 10%,#35e21e 100%)  ;margin-top: 10px; margin-bottom: 40px; position: relative;}  
+.about .container .A .A2 h3{ height: 30px;  background-image:linear-gradient( to left, #dde21e 40%,#35e21e 10%,#35e21e 100%)  ;margin-top: 10px;margin-bottom: 40px; position: relative;}  
+.about .container .A .A3 h3{ height: 30px;  background-image:linear-gradient( to left, #dde21e 30%,#35e21e 10%,#35e21e 100%)  ;margin-top: 10px; margin-bottom: 40px;position: relative;}  
+.about .container .A .A4 h3{ height: 30px;  background-image:linear-gradient( to left, #dde21e 10%,#35e21e 10%,#35e21e 100%)  ;margin-top: 10px; margin-bottom: 40px; position: relative;}
+
+.about .container .A .A1 h3::before {
+content: " 85% ";
+color: white;
+font-size: 15px;
+position: absolute;
+width: 45px;
+height: 25px;
+background-color: #000;
+left: 80%;
+top: -140%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius:10px ;
+
+} 
+
+.about .container .A .A2 h3::before {
+content: " 60% ";
+color: white;
+font-size: 15px;
+position: absolute;
+width: 45px;
+height: 25px;
+background-color: #000;
+left: 55%;
+top: -140%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius:10px ;
+
+} 
+
+.about .container .A .A3 h3::before {
+content: " 70% ";
+color: white;
+font-size: 15px;
+position: absolute;
+width: 45px;
+height: 25px;
+background-color: #000;
+left: 65%;
+top: -140%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius:10px ;
+
+} 
+
+.about .container .A .A4 h3::before {
+content: " 90% ";
+color: white;
+font-size: 15px;
+position: absolute;
+width: 45px;
+height: 25px;
+background-color: #000;
+left: 85%;
+top: -140%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius:10px ;
+
+} 
+
+.about .container .A .A1 h3::after{
+content: "";
+position: absolute;
+width: 0px;
+height: 0px;
+left: 83%;
+top: -60%;
+border-style: solid;
+border-color: black  transparent transparent transparent;
+border-width: 10px;
+
+
+} 
+.about .container .A .A2 h3::after{
+content: "";
+position: absolute;
+width: 0px;
+height: 0px;
+left: 58%;
+top: -60%;
+border-style: solid;
+border-color: black  transparent transparent transparent;
+border-width: 10px;
+
+
+} 
+.about .container .A .A3 h3::after{
+content: "";
+position: absolute;
+width: 0px;
+height: 0px;
+left: 68%;
+top: -60%;
+border-style: solid;
+border-color: black  transparent transparent transparent;
+border-width: 10px;
+
+
+} 
+.about .container .A .A4 h3::after{
+content: "";
+position: absolute;
+width: 0px;
+height: 0px;
+left: 88%;
+top: -60%;
+border-style: solid;
+border-color: black  transparent transparent transparent;
+border-width: 10px;
+
+
+} 
+
+
+
+.about .container .B h2{ margin-bottom: 40px; text-align: center;}  
+.about .container .B .Z{  text-align: center; margin-bottom: 30px; }  
+
+.about .container .B1{ margin-bottom: 30px; margin-top: 20px; display: flex;  position: relative;}  
+.about .container .B1 p { text-align: left; margin-top: 30px;border-bottom: #777 solid 2px;}  
+.about .container .B1 h6 { margin-top: 110px; position: absolute;left: 81%;font-size: 15px; color: rgba(119, 119, 119, 0.416);}  
+.about .container .B1 img{ width: 150px; height: 110px; }  
+
+.about .container .B2{ margin-bottom: 20px; display: flex; position: relative; } 
+.about .container .B2 p { text-align: left; margin-top: 30px;  border-bottom: #777 solid 2px;}  
+.about .container .B2 h6 {margin-top: 110px; position: absolute;left: 81%;font-size: 15px; color: rgba(119, 119, 119, 0.416); }  
+.about .container .B2 img{ width: 150px; height: 110px; }  
+
+@media 
+(max-width: 769px) { 
+.about .container .B1 { flex-direction: column; margin: 10px auto ; }  
+.about .container .B2 { flex-direction: column; margin: 10px auto ; }  
+.about .container .B1 img {  margin: 10px auto ; }  
+.about .container .B2 img {  margin: 10px auto ; }  
+.about .container .B1 p{ text-align: center;padding-bottom: 50px;}  
+.about .container .B2 p{ text-align: center;padding-bottom: 50px;}  
+.about .container .B1 h6{ bottom: 10px; left: 75%;font-size: 15px; }  
+.about .container .B2 h6{bottom: 10px; left: 75%;font-size: 15px;  }
+#F  {margin-right: 50px; margin-bottom: 100px; }
+}
+
+#F { 
+padding-top: 20px;
+display: flex;
+flex-direction: row; }
+
+#F li { 
+position: relative;;
+margin-left: 5px;
+width: 15px;
+height: 15px;
+border: 2px solid #35e21e ;
+border-radius: 80px;
+left: 50%;
+top: 10px;
+}
+
+.mitt { background-color:var(--main-color);}
+
+
+
+.C {
+margin-top: 60px;
+height: 300px;
+width: 100%; 
+background-image: url(fotos/11111111111.jpg);
+background-repeat:no-repeat;
+background-position: center;
+background-size: contain;
+text-align: center;
+display: flex;
+background-color:#edec3a;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-radius: 100px;
+}
+ .container .C p { 
+    margin-top: 30px;
+     font-size: 15px;
+     font-weight: 900;}
+
+ .container .C h2 { 
+    width: 70%;
+
+
+}
+
+
+@media 
+(max-width: 769px) { 
+.C  {margin-top: 1200px;} }
+
+
+ /* <!-- <== end About = ==> --> */
+/* <!-- <===========================================================================================================================>  --> */
+/* <!-- <== start price==> --> */
+
+.price {
+height: 1500px;
+margin-bottom: 60px;
+background-color:white;} 
+
+.price-head  {
+text-align: center;
+padding-top: 60px;
+padding-bottom: 60px;} 
+
+.price-head .pri h1{
+color: var(--transparent-color);
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 50px;
+position: relative;
+text-transform: uppercase;} 
+
+.price-head .pri p{
+font-weight: 900;
+font-size:small;
+width: 30%;
+color:rgba(0, 0, 0, 0.347);
+margin: 0px auto 0px;
+max-width: 100%;} 
+
+.price-head .pri h1::before{
+content: " ";
+position: absolute;
+height: 3px;
+width: 140px;
+background-color:#000;
+transform: translateX(-50%);
+left: 50%;
+bottom: -40%;
+} 
+.price-head .pri h1::after{
+content: " ";
+position: absolute;
+width: 10px;
+height: 10px;
+background-color:var(--main-color);
+border: 3px solid #000;
+border-radius: 20px;
+transform: translateX(-50%);
+left: 50%;
+bottom: -50%;} 
+
+@media 
+(max-width: 768px) { 
+.price {height: 1000px;}   
+.price-head .pri { margin-bottom: -50px;} 
+.price-head .pri p{ margin: 0 auto 2px; width: 60%; font-size: 10px;} 
+.price-head .pri h1{font-size: 30px; margin-bottom: 35px;}
+.price-head .pri h1::before  {width: 80px;}
+.price-head .pri h1::after  {width: 5px; height: 5px;}
+}
+
+.price .container  { 
+
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(235px,1fr));
+justify-content: center;
+text-align: center;
+gap: 20px;
+}
+
+.price .container .A { 
+background-color: rgba(119, 119, 119, 0.067); 
+
+}
+
+
+.price .container .A p{ width: 175px;
+    padding: 20px;
+    margin-left: 35px; 
+    border-top: #35e21e solid 1px; 
+    font-size: 15px; 
+    margin-top: -0.5px;  
+}
+@media 
+(max-width: 991px) { 
+
+    .price .container .A p{ margin-left: 85px;} 
+    .price .container .A .d h5{margin: auto;}
+    .price .container .A h1::before{left: 50%;}
+    .price .container .A h1::after{right: 50%;}
+}
+
+.price .container .A .D{ 
+    padding: 40px; 
+    border-top: #35e21e solid 1px;   
+    border-bottom: #35e21e solid 1px;  
+     
+}
+
+.price .container .A h1{ 
+    position: relative;
+    font-size: 55px; 
+    font-weight: 900;
+}
+.price .container .A h1::before{ 
+    content: " /Mo";
+    position: absolute;
+    font-weight: 1900;
+    font-size: 20px; 
+    right: 0%;
+    bottom: 0%;
+    top: 55%;
+}
+.price .container .A h1::after{ 
+    content: " €";
+    position: absolute;
+    font-weight: 1900;
+    font-size: 20px; 
+    left: 10%;
+    top: 0%;
+}
+
+.price .container .A .D h3{ 
+    font-size: 17px;  
+    font-weight: 600;
+}
+
+.price .container .A h5{ 
+    border: #35e21e solid 1px;   
+    width: 100px;
+    font-size: 15px;
+    margin-left: 30px;
+  height: 50px ; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.price .container .A .d{ 
+    border-top: #35e21e solid 1px;   
+        padding: 40px; 
+
+}
+
+ .price-end { 
+margin-top: 60px; 
+text-align: center;}
+
+ .price-end p{ 
+width: 150px;
+height: 50px;
+background-color: #dde21e;
+margin: 20px auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.price .foto  {
+margin-top: 220px;
+height: 300px;
+background-image: url(fotos/background-2.jpg);
+background-position: center;
+background-size: cover;
+ }
+.price .foto .container {
+height: 300px;
+margin-top: 0px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+ }
+ @media 
+(max-width: 991px) { 
+
+.price .foto {margin-top: 80px;} 
+.price .foto .container{flex-direction: column;} 
+.price .foto .container p{width: 80%; font-size: 15px;  margin-top: -40px;}
+.price .foto i{padding-right: 100px; margin-bottom: 2px; }
+
+}
+.price .foto .container  form {
+position: relative;
+}
+.price .foto .container  form #email{ 
+position: relative;
+height: 50px;
+width: 340px;
+top: 24px;
+padding-left: 30px;
+background-color: transparent;
+border: #dde21e solid 3px;
+background-color: #dbe21e52;
+padding-left: 25px;
+caret-color :#35e21e;
+ }
+ .price .foto .container  form #email:focus{ outline: none;}
+
+.price .foto .container  form #email::placeholder{ 
+color:var(--main-color);
+margin-left: 20px;
+font-size: 10px;
+
+
+
+}
+.price .foto .container  form #deen{ 
+position: relative;
+width:90px;
+height: 50px;
+background-color: #dde21e;
+bottom: 26px;
+left: 125px;
+border: #dde21e solid 4px;
+
+
+}
+.price .foto .container p {
+color: #dde21e;
+text-align: left;
+margin-left: 60px;
+line-height: 1.8;
+
+
+ }
+.price .foto .container form i {
+position: absolute;
+color: #dde21e;
+text-align: left;
+margin-left: 10px;
+font-size: 15px;
+bottom: 40px;
+z-index: 1;
+
+ }
+ /* <!-- <== end price = ==> --> */
+/* <!-- <===========================================================================================================================>  --> */
+/* <!-- <== start contact us==> --> */
+
+
+ .Contact-us {
+height: 1000px;
+padding-bottom: 60px;
+padding-top: 60px;
+background-color:var(--main-color);} 
+
+.contact-head  {
+text-align: center;
+padding-top: 20px;
+padding-bottom: 60px;} 
+
+.contact-head .us  h1{
+color: var(--transparent-color);
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 50px;
+position: relative;
+text-transform: uppercase;} 
+
+.contact-head .us  p{
+font-weight: 900;
+font-size:small;
+width: 30%;
+color:rgba(0, 0, 0, 0.347);
+margin: 0px auto 0px;
+max-width: 100%;} 
+
+.contact-head .us  h1::before{
+content: " ";
+position: absolute;
+height: 3px;
+width: 140px;
+background-color:#000;
+transform: translateX(-50%);
+left: 50%;
+bottom: -40%;
+} 
+.contact-head .us  h1::after{
+content: " ";
+position: absolute;
+width: 10px;
+height: 10px;
+background-color:var(--main-color);
+border: 3px solid #000;
+border-radius: 20px;
+transform: translateX(-50%);
+left: 50%;
+bottom: -50%;} 
+
+@media 
+(max-width: 991px) { 
+.Contact-us {height: 1150px; margin-top: 2180px;}   
+.contact-head .us  { margin-bottom: 50px;} 
+.contact-head .us  p{ margin: 0 auto 2px; width: 60%; font-size: 10px;} 
+.contact-head .us  h1{font-size: 30px; margin-bottom: 35px;}
+.contact-head .us  h1::before  {width: 80px;}
+.contact-head .us  h1::after  {width: 5px; height: 5px;}
+}
+
+.Contact-us .contact-content{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: space-between;
+
+
+ } 
+
+.Contact-us .input form{ 
+display: flex;
+flex-direction: column;
+ }
+
+.Contact-us .input { 
+flex-basis: 80%;
+width: 70%;
+ }
+.Contact-us .input #name{ width:100% ;margin-bottom: 20px; height: 50px; border: #dde21e solid 3px; padding-left: 20px; caret-color: var(--transparent-color);}
+.Contact-us .input #email{width:100%; margin-bottom: 20px; height: 50px; border: #dde21e solid 3px; padding-left: 20px; caret-color: var(--transparent-color);}
+.Contact-us .input #text{border: #dde21e solid 3px; max-width:100%; line-height: 1,5; height: 200px; padding-left: 20px; caret-color: var(--transparent-color);}
+
+.Contact-us .input #name:focus{outline: none;}
+.Contact-us .input #email:focus{outline: none;}
+.Contact-us .input #text:focus{outline: none;}
+
+
+
+
+.contact-adresse .X { margin-bottom: 80px; }
+.contact-adresse .X h4{ margin-bottom: 20px; }
+.contact-adresse .X p{  color: rgba(119, 119, 119, 0.919); }
+.contact-adresse .S h4{ margin-bottom: 20px; }
+.contact-adresse .S p{ color: rgba(119, 119, 119, 0.919); }
+
+@media 
+(max-width: 768px) { 
+.Contact-us .contact-content{ flex-direction: column; justify-content: center; align-items: center; }   
+.contact-head .us  { margin-bottom: 50px;} 
+.contact-adresse .X{ margin-bottom: 40px; } 
+.contact-adresse{ text-align: center; margin-bottom: 40px;}
+.Contact-us .contact-content .input  {margin-bottom: 40px;}
+}
+
+
+
+
+.CONFIRM{  
+width: 150px;
+height: 50px;
+background-color: var(--transparent-color);
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+margin-top: 50px;
+}
+.CONFIRM a  {  
+color: #dde21e;
+text-decoration: none;
+} 
+
+
+.Contact-us .contact-foot { 
+margin-top: 60px;
+height:40%;
+background-image:url(fotos/background-2.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+text-align: center;
+position: relative;
+z-index: 0;
+}
+.contact-foot ul { 
+color:var(--main-color);
+}
+.Contact-us .contact-foot p {
+position: absolute;
+background-color: #000000eb;
+width: 100%;
+height: 100%;
+z-index: -1;
+}
+.contact-foot ul .A3{ 
+border-bottom: #35e21e 3px solid; 
+width: fit-content; 
+margin: auto;
+padding-bottom: 20px;
+padding-top: 50px;
+}
+
+.contact-foot ul li { padding: 20px;}
+
+.contact-foot ul :nth-child(4){ padding-top: 10px;}
+.contact-foot ul i{ 
+text-align: center;
+height: 40px;
+position: relative; 
+bottom: 5px;
+margin-left: 14px;
+margin-bottom: 0px;
+left: -5px;
+}
+
+.contact-foot img { 
+position: relative;
+width: 150px;
+height: 70px;
+margin-top: 20px;
+}
+
+
+ /* { }  */
+
+/* 
+#01 - Discover Design And Add Tools
+#02 - Create Header Part 1
+#03 - Create Header Part 2
+#04 - Create Header Part 3 Responsive
+#05 - Landing Section Part 1
+#06 - Landing Section Part 2
+#07 - Heading Component 
+#08 - Services Section
+#09 - Design Section
+#10 - Portfolio Section
+#11 - Video Section
+#12 - About Section
+#13 - Statistics Section
+#14 - Our Skills Section - Html
+#15 - Our Skills Testimonials - Part
+#16 - Our Skills - Progress Part
+#17 - Quote Section
+#18 - Pricing Section - Part 1
+#19 - Pricing Section - Part 2
+#20 - Subscribe Section
+#21 - Contact Us Section
+#22 - Footer
+*/
+
+
+
+/* =================================================================================================================================================================== */
+
+/* {background-color: ;
+width: ;
+margin: ;
+padding: ; }  */
+
+/*  { } */
+
+/* 
+#01 - Introduction And What I Need To Learn                  autocad kurs 11:22
+
+What is CSS
+
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+
+####################################################################################################################################
+#02 - Your First Project And Syntax 
+
+<head>داخل قسم  <link>  رمرجعا إلى ملف ورقة الأنماط الخارجي داخل عنصر HTML يجب أن تتضمن كل صفحة  
+
+
+<!DOCTYPE html>
+
+
+Tag            <==========>          Description 
+
+selectors      <==========>          CSS selectors are used to "find" (or select) the HTML elements you want to style. 
+
+####################################################################################################################################
+
+/*#003 - Element Styling
+
+CSS محددات 
+التي تريد تصميمها HTML للعثور علي او تحديد عناصر  CSS تستخدم محددات
+
+الى خمس فئاتCSS  يمكننا تقسيم محددات 
+      :
+(حدد العناصر بناء على الاسم والمعرف والفئة)محددات بسيطة
+(حدد العناصر بناء على علاقة محددة بينها)محددات التجميع
+(حدد العناصر بناء على حالة معينة)محددات الفئة الزائفة
+(حدد جزءا من عنصر ونمطه)محددات العناصر الزائفة
+(حدد العناصر استنادا إلى سمة أو قيمة سمة)محددات السمات
+
+         
+هناك ثلاث طرق لإدراج ورقة أنماط:
+
+CSS الخارجية
+CSS الداخلية
+CSS مضمن 
+
+####################################################################################################################################
+
+# 004 - Name Conventions And Rules
+#013 - Grouping Multiple Selectors
+
+محاولة كتابة اكواد واضحه وبسييطه لتسهيل البحث عنها والتعديل عليها
+
+: لا يمكن أن يبدأ اسم المحدد برقم!
+
+سيكون من الأفضل تجميع المحددات ، لتقليل الرمز
+
+, لتجميع المحددات، افصل كل محدد بفاصلة  
+
+    البسيطه CSS جميع محددادت
+
+Selector	             Example	        description
+
+#id	                     #firstname         Selects the element with id="firstname"
+.class	                 intro              Selects all elements with class="intro"
+element.class	         p.intro            Selects only <p> elements with class="intro"
+*	                     *	                Selects all elements
+element	                 p	                Selects all <p> elements
+element,element,..	     div, p             Selects all <div> elements and all <p> elements 
+element>element	         div > p	        Selects all <p> elements where the parent is a <div> element
+.class1.class2	        .name1.name2	    Selects all elements with both name1 and name2 set within its class attribute
+element+element	        div + p	            Selects the first <p> element that is placed immediately after <div> elements
+
+https://css-tricks.com/almanac/selectors/c/child/  موقع لتعمق في المحددات:
+
+####################################################################################################################################
+
+/* #005 - Background - Color, Image, Repeat
+
+
+Tag                                     Description
+
+Background - color          <==========>      تحدد الخاصية لون خلفية عنصر
+In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:
+Background - Repeat         <==========>      يحدد كيفية تكرار صورة الخلفية نفسها عبر خلفية العنصر، بدءا من موضع الخلفية
+background-repeat: repeat;      ====     ستكرر صورة الخلفية نفسها أفقيا ورأسيا
+background-repeat: repeat-x;    ====     ستكرر صورة الخلفية نفسها أفقيا فقط
+background-repeat: repeat-y;    ====     ستكرر صورة الخلفية نفسها عموديا فقط
+background-repeat: no-repeat;   ====     ستظهر صورة الخلفية مرة واحدة فقط 
+
+####################################################################################################################################
+
+/* #006 - Background - Attachment, Position, Size
+
+background-position          <==========>     يتم استخدام الخاصية لتحديد موضع صورة الخلفية
+center,top,bottom,left,righ      ====         يمكنك استخدام مجموعة من الكلمات الرئيسية للموضع
+background-size              <==========>     يتم استخدام الخاصية لتحديد حجم صور الخلفية.
+background-size: auto;           ====         القيمة الافتراضية. يتم عرض صورة الخلفية بحجمها الأصلي
+background-size: contain;        ====         قم بتغيير حجم صورة الخلفية للتأكد من أن الصورة مرئية بالكامل
+background-size: cover;          ====         قم بتغيير حجم صورة الخلفية لتغطية الحاوية بأكملها ، حتى إذا كان عليها تمديد الصورة أو قصها قليلاً من أحد الحواف
+background-size: 50%;            ====         يضبط عرض صورة الخلفية وارتفاعها بالنسبة المئوية للعنصر الأصل. تحدد القيمة الأولى العرض ، بينما تحدد القيمة الثانية الارتفاع. إذا تم تقديم قيمة واحدة فقط ، يتم تعيين الثانية على "تلقائي"
+background-size: 60px;           ====         عرض وارتفاع صورة الخلفية. تحدد القيمة الأولى العرض ، بينما تحدد القيمة الثانية الارتفاع. إذا تم تقديم قيمة واحدة فقط ، يتم تعيين الثانية على "تلقائي"
+background-attachment        <==========>     تحدد الخاصية ما إذا كانت صورة الخلفية تمرر مع بقية الصفحة، أو تم إصلاحها.
+scroll                           ====         سيتم تمرير صورة الخلفية مع الصفحة. هذا هو الافتراضي
+fixed                            ====         لن يتم تمرير صورة الخلفية مع الصفحة
+
+####################################################################################################################################
+                                
+
+/* #007 - Padding
+
+padding            <==========>   تستخدم لإنشاء مساحة حول محتوى العنصر، داخل أي حدود محددة
+يمكن أن تحتوي كافة خصائص الحشو على القيم التالية                        ====
+padding-top             ====   لتقصير التعليمة البرمجية ، من الممكن تحديد جميع خصائص الحشو في خاصية واحدة
+padding-bottom          ====    padding: 25px 50px 75px 100px;
+padding-right           ====   لديك التحكم الكامل في الحشو. هناك خصائص لتعيين الحشو لكل جانب من جوانب العنصر أعلى ويمين وأسفل ويسار
+padding-left            ====
+
+
+####################################################################################################################################
+
+/* #008 - Margin      <==========>   تستخدم لإنشاء مساحة حول العناصر، خارج أي حدود محددة و تستخدم الهوامش لإنشاء مساحة حول العناصر
+                                  يمكن أن تحتوي جميع خصائص الهامش على القيم التالية:
+margin-top            ====        لتقصير التعليمة البرمجية ، من الممكن تحديد جميع خصائص الهوامش في خاصية واحدة
+margin-right          ====         margin:     25px                50px              75px               100px;  
+margin-bottom         ====                    الايسر               السفلي           الايمن              العلوي
+margin-left           ====        -10px     يمكن استخدام قيم سالبه  
+auto                  ====         يمكنك تعيين خاصية الهامش إلى توسيط العنصر أفقيا داخل حاويته 
+
+####################################################################################################################################
+
+/* #039 - Border Radius 
+#009 - Border  
+border-radius  <==========>   تحدد الخاصية نصف قطر زوايا العنصر .
+border-style   <==========>   تسمح لك بتحديد نمط وعرض ولون حد العنصر.
+border-width   ====  تحدد الخاصية عرض الحدود الأربعة
+border-color   ====  يتم استخدام الخاصية لتعيين لون الحدود الأربعة
+border         ====  لتقصير الرمز، من الممكن أيضا تحديد جميع خصائص الحدود الفردية في خاصية واحدة.
+                     border: 5px solid red;
+
+
+border-style                 تحدد الخاصية نوع الحدود المراد عرضها.  
+
+dotted -      ====           يحدد الحدود المنقطة                    
+dashed -      ====           يحدد الحدود المتقطعة
+solid -       ====           يحدد حدودا صلبة
+double -      ====           يحدد الحدود المزدوجة
+groove -      ====           يحدد حدود مخددة 3D. يعتمد التأثير على قيمة لون الحدود
+ridge -       ====           يحدد حدود 3D ريدج. يعتمد التأثير على قيمة لون الحدود
+inset -       ====           يحدد حدود داخلية 3D. يعتمد التأثير على قيمة لون الحدود
+outset -      ====           يحدد حدود بداية 3D. يعتمد التأثير على قيمة لون الحدود
+none -        ====           لا يحدد الحدود
+hidden -      ====           يحدد الحدود المخفية 
+
+####################################################################################################################################
+
+/* #010 - Outline
+
+Outline          <==========>    هو خط يتم رسمه حول العناصر ، خارج الحدود ، لجعل العنصر "بارزا".
+outline-width    <==========>    تحدد الخاصية عرض المخطط التفصيلي، ويمكن أن تحتوي على إحدى القيم التالية: 
+outline-color    <==========>    يتم استخدام الخاصية لتعيين لون المخطط التفصيلي 
+outline-offset   <==========>    تضيف الخاصية مسافة بين مخطط تفصيلي وحافة/حد عنصر. المسافة بين العنصر ومخططه شفافة
+outline          <==========>    الخاصية هي خاصية اختصار لتعيين خصائص المخطط التفصيلي في سطر واحد
+
+
+
+outline-style    <==========>    تحدد الخاصية نمط المخطط التفصيلي، ويمكن أن تحتوي على إحدى القيم التالية
+dotted - يحدد مخططا منقطة
+dashed - يحدد مخططا متقطعا
+solid - يحدد مخططا صلبا
+double - يحدد مخططا مزدوجا
+groove - يحدد مخطط 3D مخدد
+ridge - يحدد مخطط 3D ريدد
+inset - يحدد مخطط 3D inset
+outset - يحدد مخطط بداية 3D
+none - لا يحدد أي مخطط
+hidden - يحدد مخططا مخفيا 
+
+####################################################################################################################################
+
+/* #011 - Display - Block, Inline Block, Inline
+#012 - Element Visibility And Use Cases 
+
+display               <==========>   تحدد الخاصية إذا/كيف يتم عرض عنصر , الخاصية هي أهم خاصية  للتحكم في التخطيط
+display: none;        <==========>   يستخدم عادة مع جافا سكريبت لإخفاء العناصر وإظهارها دون حذفها وإعادة إنشائها
+block & inline        <==========>   يحتوي كل عنصر اتش تي ام ال على قيمة عرض افتراضية اعتمادا على نوع العنصر الذي هو عليه. قيمة العرض الافتراضية لمعظم العناصر هي 
+inline-block          <==========>   لتقسيم العناصر بجانب بعض 
+visibility:hidden     <==========>   يستخزم لي اخفاء العناصر 
+
+####################################################################################################################################
+
+/* #13 - Grouping Multiple Selectors
+
+يمكن تجميع القيم المحداده واعطاه نفس التغيرات
+.one,
+.two,
+.three { color: rgb(92, 123, 26);
+    border-color: blueviolet; *
+
+####################################################################################################################################
+
+
+/* #014 - Nesting
+
+بدلا من إعادة كتابة نفس مجموعة الخصائص للمحددات المختلفة ، يمكننا ببساطة تداخل
+المحددات داخل المحددات الأخرى. لهذا السبب ، نحن لا نقلل
+فقط من حجم الكود ولكن أيضا نقلل من وقت التحميل الإجمالي.
+ 
+يمكننا التعديل علي العناصر التي ذاخل عنصر ، بي كتابة العنصر الاول الذي بيه العناصر المراد التعديل عليه
+
+مثال
+div,span.A5 
+    color: rgb(12, 133, 173); 
+
+####################################################################################################################################    
+
+/* #15 - Dimensions - Width And Height
+
+
+لا تتضمن خصائص الارتفاع والعرض الحشو أو الحدود أو الهوامش. يقوم بتعيين ارتفاع / عرض المنطقة داخل الحشو والحدود والهامش للعنصر.
+
+height-width  <==========>  يتم استخدام الخصائص لتعيين ارتفاع وعرض عنصر
+max-width     <==========>  يتم استخدام الخاصية  لتعيين الحد الأقصى لعرض عنصر
+max-height    <==========>  تحدد الخاصية الحد الأقصى لارتفاع عنصر
+auto          <==========>  هذا هو الافتراضي. يقوم المتصفح بحساب الارتفاع والعرض
+initial       <==========>  يضبط الارتفاع / العرض على قيمته الافتراضية  
+inherit       <==========>  سيتم توريث الارتفاع / العرض من قيمته الأصلية 
+
+####################################################################################################################################
+
+/* #021 - Text - Overflow And Use Cases
+#016 - Overflow - Overflow-X And Overflow-Y
+ملاحظه: تعمل الخاصية فقط مع عناصر الكتلة ذات الارتفاع المحدد
+Overflow       <==========>    تحدد الخاصية ما إذا كان يجب قص المحتوى أو إضافة أشرطة تمرير عندما يكون محتوى عنصر كبيرا جدا بحيث لا يمكن احتواؤه في المنطقة المحددة
+visible        <==========>    الافتراضي. لا يتم قص الفائض. يتم عرض المحتوى خارج مربع العنصر
+hidden         <==========>    يتم قص الفائض ، وسيكون بقية المحتوى غير مرئي
+scroll         <==========>    يتم قص الفائض ، ويضاف شريط تمرير لرؤية بقية المحتوى
+auto           <==========>    على غرار ، لكنه يضيف أشرطة التمرير فقط عند الضرورة
+overflow-x     <==========>    يحدد ما يجب القيام به مع الحواف اليسرى / اليمنى للمحتوى 
+overflow-y     <==========>    يحدد ما يجب القيام به مع الحواف العلوية / السفلية للمحتوى
+text-overflow  <==========>    (...) . تحدد الخاصية كيفية الإشارة إلى المحتوى الفائض الذي لا يتم عرضه للمستخدم. يمكن قصه أو عرض علامة حذف
+                   ====
+          clip     ====    القيمة الافتراضية. يتم قص النص ولا يمكن الوصول إليه  
+      ellipsis     ====    ("...")   عرض علامة القطع  لتمثيل النص المقطوع
+        string     ====    يجعل السلسلة المحددة لتمثيل النص المقطوع
+        nowrap     ====    لا يقطع النص ويخرج.كما هو 
+
+####################################################################################################################################
+
+#017 - Text - Color And Shadow
+#020 - Text - Spacing 
+color            <==========>   يتم استخدام الخاصية لتعيين لون النص. يتم تحديد اللون من خلال
+text-indent      <==========>   يتم استخدام الخاصية لتحديد المسافة البادئة للسطر الأول من النص
+letter-spacing   <==========>   يتم استخدام الخاصية لتحديد المسافة بين الأحرف في النص.
+line-height      <==========>   يتم استخدام الخاصية لتحديد المسافة بين الأسطر
+word-spacing     <==========>   يتم استخدام الخاصية لتحديد المسافة بين الكلمات في النص
+white-space      <==========>   تحدد الخاصية كيفية معالجة المسافة البيضاء داخل عنصر
+text-shadow      <==========>   تضيف الخاصية ظلا إلى النص.  اضافة اربعه قيم ' الطل الافقي والراسي واللون والضباب
+word-break       <==========>   تحدد الخاصية كيفية كسر الكلمات عند الوصول إلى نهاية السطر. 
+
+
+####################################################################################################################################
+
+/* #018 - Text - Alignment
+
+text-align              <==========>    يمكن محاذاة النص إلى اليسار أو اليمين أو توسيطه أو ضبطه, يتم استخدام الخاصية لتعيين المحاذاة الأفقية للنص
+text-align-last         <==========>    تحدد الخاصية كيفية محاذاة السطر الأخير من النص
+direction               <==========>    يمكن استخدام الخصائص والخصائص لتغيير اتجاه النص لأحد العناصر 
+unicode-bidi            <==========>    يمكن استخدام الخصائص والخصائص لتغيير اتجاه النص لأحد العناصر
+vertical-align          <==========>    تقوم الخاصية بتعيين المحاذاة الرأسية لعنصر
+ */
+
+/* #19 - Text - Decoration And Transform
+
+text-decoration-line            <==========>     يتم استخدام الخاصية لإضافة سطر زخرفة إلى النص
+text-decoration-color           <==========>     يتم استخدام الخاصية لتعيين لون خط الديكور.
+text-decoration-style           <==========>     يتم استخدام مكان الإقامة لتعيين نمط خط الديكور.
+text-decoration-thickness       <==========>     يتم استخدام الخاصية لضبط سمك خط الديكور
+text-decoration                 <==========>     خاصية اختصار لتعيين خصائص المخطط التفصيلي في سطر واحد
+text-transform                  <==========>     يتم استخدام الخاصية لتحديد الأحرف الكبيرة والصغيرة في النص. */
+
+/* #022 - Inheritance
+
+inherit     <==========>  تحدد الكلمة الرئيسية أن الخاصية يجب أن ترث قيمتها من العنصر الأصل  
+
+
+inherit     <==========>  يمكن استخدام الكلمة الرئيسية لأي خاصية CSS وعلى أي عنصر HTML. */
+
+/* #023 - Typography - Font Family
+#024 - Typography - Font Size And CSS Units 
+#025 - Typography - Font Style And Variant And Weight
+"Times New Roman"  ملاحظة: إذا كان اسم الخط يحتوي على أكثر من كلمة واحدة، فيجب أن يكون بين علامتي اقتباس، مثل: 
+
+font-family      <==========>  ستخدم الخاصية لتحديد خط النص
+Web safe fonts   <==========>  هي خطوط مثبتة عالميا عبر جميع المتصفحات والأجهزة
+
+HTML و CSS  القائمة التالية هي أفضل خطوط الويب الآمنة ل 
+
+Arial (sans-serif)          <==========>  هو الخط الأكثر استخداما على نطاق واسع لكل من الوسائط عبر الإنترنت والمطبوعة
+Verdana (sans-serif)        <==========>  هو خط شائع جدا. يمكن قراءة  بسهولة حتى بالنسبة لأحجام الخطوط الصغيرة.
+Tahoma (sans-serif)         <==========>  يحتوي على مسافة أقل بين الأحرف.
+Trebuchet MS (sans-serif)   <==========>  استخدم هذا الخط بعناية. غير مدعوم من قبل جميع أنظمة تشغيل الأجهزة المحمولة.
+Times New Roman (serif)     <==========>  هي واحدة من أكثر الخطوط التي يمكن التعرف عليها في العالم. يبدو محترفا ويستخدم في العديد من الصحف والمواقع "الإخبارية". وهو أيضا الخط الأساسي لأجهزة وتطبيقات
+Georgia (serif)             <==========>  جورجيا هو خط  أنيق. إنه قابل للقراءة للغاية بأحجام خطوط مختلفة ، لذلك فهو مرشح جيد للتصميم المتجاوب مع الجوال.
+Garamond (serif)            <==========>  هو خط كلاسيكي يستخدم للعديد من الكتب المطبوعة. لديها نظرة خالدة وقراءة جيدة.
+Courier New (monospace)     <==========>  ساعي جديد هو الخط الأكثر استخداما على نطاق واسع أحادي الفضاء serif. غالبا ما يستخدم Courier New مع شاشات الترميز ، ويستخدمه العديد من موفري البريد الإلكتروني كخط افتراضي. Courier New هو أيضا الخط القياسي لسيناريوهات الأفلام.
+Brush Script MT (cursive)   <==========>  تم تصميم خط Brush Script MT لتقليد الكتابة اليدوية. إنه أنيق ومتطور ، ولكن قد يكون من الصعب قراءته. استخدمه بعناية.
+
+: عند تحديد خط في CSS، قم دائما بإدراج خط احتياطي واحد على الأقل (لتجنب السلوكيات غير المتوقع)ملاحظه
+ملاحظه: قد يؤدي طلب خطوط متعددة إلى إبطاء صفحات الويب الخاصة بك! لذا كن حذرا بشأن ذلك.
+الحجم االافتراضي لنص صفحات الويب 16 بيكسل 
+
+Google Font   <==========>   يوجد اكثر من 1000 نوع خط من جوجل يمكن استعمالها ماعليك سوي اضافة ورقة انماط في الراس  
+serif         <==========>   خط احتياطي اغتراضي يجب ادارجه في اي اذخال للخطوط
+sans-serif    <==========>   خط احتياطي اغتراضي يجب ادارجه في اي اذخال للخطوط                             
+font-size     <==========>   تقوم الخاصية بتعيين حجم النص        
+CSS Units     <==========>   يحتوي سي سس على عدة وحدات مختلفة للتعبير عن الطول 
+Unit          <==========>   Description	
+em	1 , 2     <==========>   بالنسبة لحجم الخط للعنصر يعني ضعف حجم الخط الحالي	
+rem	          <==========>   متعلق بحجم الخط للعنصر الجذر،اذا من ال html or css 
+vw	          <==========>   متناسب مع 1٪ من عرض منفذ العرض *	
+vh	          <==========>   متناسب مع 1٪ من ارتفاع منفذ العرض *
+%             <==========>   متعلق بالعنصر الأصل                  
+font-style    <==========>   تستخدم الخاصية في الغالب لتحديد نص مائل      
+         normal  =====   يظهر النص بشكل طبيعي
+         italic  =====   يظهر النص بخط مائل
+        oblique  =====   مائل يشبه إلى حد كبير الخط المائل ، ولكنه أقل دعما
+font-weight   <==========>   تحدد الخاصية وزن الخط 
+                normal 
+                lighter
+                bold
+                900     
+font-variant  <==========>   تحدد الخاصية ما إذا كان يجب عرض نص بخط صغير الحجم أم لا         
+               */
+
+/* #026 - Mouse Cursor 
+
+تحديد شكل و وظيفة مؤشر الماوس حسب الموقع اذا كان تحريك او ضغط او بحث او انتظار */
+
+/* #027- Float And Clear
+
+Float     <==========>  تحدد الخاصية  كيفية تعويم عنصر
+    left      ====    يطفو العنصر على يسار حاويته
+    right     ====    يطفو العنصر على يمين حاويته
+    none      ====    لا يطفو العنصر (سيتم عرضه فقط في مكان حدوثه في النص). هذا هو الافتراضي
+    inherit   ====    يرث العنصر قيمة التعويم لأصله
+float     <==========>  في أبسط استخدام لها ، يمكن استخدام الخاصية لالتفاف النص حول الصور
+
+Clear     <==========>  تحدد الخاصية العناصر التي يمكن أن تطفو بجانب العنصر الذي تم مسحه وعلى أي جانب
+ */
+
+/* #028 - Mastering The CSS Calculation 
+
+calc()  <==========>  تسمح دالات الرياضيات  باستخدام التعبيرات الرياضية كقيم خصائص.
+
+width: calc((100% - 96px) / 6); */
+
+/* 
+#029 - Opacity 
+
+transparent    <==========>  لون شفاف من قائمة الالوان
+
+Opacity        <==========>  تحدد الخاصية عتامة/شفافية عنصر
+
+opacity:hover  <==========>  غالبا ما يتم استخدام الخاصية مع المحدد لتغيير التعتيم على الماوس */
+
+/* #030 - Position
+
+Position       <==========>     تحدد الخاصية نوع طريقة تحديد المواقع المستخدمة لعنصر ما ثابت أو نسبي أو ثابت أو مطلق أو لزج
+static         <==========>     الوضع الافتراضي يتم تثبيت العنصر به 
+relative       <==========>     يمكن تحريك العنصر تحريك نسبي حر في اي مكان في الصفحه
+fixed          <==========>     يضع العنصر ثابت في اي مكان في الصفحه ويتحرك مع تمرير الماوس
+absolute       <==========>     في العنصر الاول بعد ضم العنصر التاني في نفس محدد العنصر الاول relative لتحريك العنصر الاول ذاخل حدود العنصر التاني فقط يجب كتابة خاصية 
+sticky         <==========>     يثبت العنصر في مكانه حتي تصل اليه بتحريك المارس فيتحرك
+top               <==>
+bottom            <==>      absolute              لن يبقى العنصر في التدفق الطبيعي للصفحة. ستضع نفسها وفقًا لأقرب سلف .
+left              <==>
+right             <==> */
+
+/* #031 - Z-Index
+
+Z-Index   <==========>   تحدد الخاصية ترتيب تراكم العناصر
+
+التحكم في الطبقات  */
+
+/* #032 - Lists Styling
+
+list-style-type      <==========>     تحدد الخاصية نوع علامة عنصر القائمة.حروف او ارقام او نقاط
+                 none   <====>    يمكن أيضا استخدام الخاصية لإزالة العلامات/التعداد النقطي.
+                  list-style-type: none;
+                  padding: 0px;
+                  margin: 0px;
+list-style-image     <==========>     تحدد الخاصية صورة كعلامة عنصر قائمة   
+list-style-position  <==========>     تحدد الخاصية موضع علامات عناصر القائمة (النقاط النقطية) */
+
+/* #033 - Table Styling
+
+border              <==========>   لتحديد حدود الجدول استخدم الخاصية
+border-spacing      <==========>   تقوم الخاصية بتعيين المسافة بين حدود الخلايا المجاورة
+border-bottom       <==========>   للفواصل الأفقية
+padding             <==========>   للتحكم في المسافة بين الحد والمحتوى في جدول،
+border-collapse     <==========>   تحدد الخاصية ما إذا كان يجب طي حدود الجدول إلى حد واحد
+width: 100%         <==========>   التحكم في عرض الجدول
+height              <==========>   التحكم في طول الجدول              
+text-align: center  <==========>   تقوم الخاصية بتعيين المحاذاة الأفقية  مثل اليسار أو اليمين أو الوسط       
+vertical-align      <==========>   تقوم الخاصية بتعيين المحاذاة الرأسية مثل أعلى أو أسفل أو وسط
+hover:              <==========>   استخدم المحدد لتمييز صفوف الجدول على الماوس فوق
+nth-child()         <==========>   بالنسبة للجداول المخططة بالحمار الوحشي، استخدم المحدد وأضف علامة إلى جميع صفوف الجداول الزوجية  */
+
+/* #034 - Pseudo Classes 
+
+:link      <==========>   استخدام المحدد لتحديد الروابط التي لم تتم زيارتها
+:visited   <==========>   المحدد يستخدم لتحديد الروابط التي تمت زيارتها
+:hover     <==========>   يستخدم المحدِّد لتحديد العناصر عند تحريك الماوس فوقها
+:active    <==========>   يتم استخدام المحدد لتحديد الارتباط النشط وتصميمه.
+:empty     <==========>   المحدد يطابق كل عنصر ليس له عناصر فرعية العناصر الفارغه
+:checked   <==========>   input المحدد يطابق كل عنصر محدد فقط لأزرار الاختيار وخانات الاختيار و خيار */
+
+/* #035 - Pseudo Elements - First Letter, First Line, Selection
+#036 - Pseudo Elements - Before, After, Content
+::first-letter    <==========>     يُستخدم العنصر الزائف لإضافة نمط خاص إلى الحرف الأول من النص.
+::first-line      <==========>     يُستخدم العنصر الزائف لإضافة نمط خاص إلى السطر الأول من النص. 
+::marker          <==========>     يحدد العنصر الزائف علامات عناصر القائمة.
+::selection       <==========>     يتطابق العنصر الزائف مع جزء العنصر المحدد بواسطة المستخدم.
+
+content           <==========>     تُستخدم الخاصية مع العناصر الزائفة، لإدراج المحتوى المُنشأ :: before و :: after
+::before          <==========>     يمكن استخدام العنصر الزائف لإدراج بعض المحتوى قبل محتوى العنصر.
+::after           <==========>     يمكن استخدام العنصر الزائف لإدراج بعض المحتوى بعد محتوى العنصر. */
+
+/* / #037 - Pseudo Elements - Content And Trainings
+
+counter-reset-             <==========>   ينشئ أو يعيد تعيين عداد
+counter-increment-         <==========>   يزيد من قيمة العداد
+content-                   <==========>   إدراج المحتوى الذي تم إنشاؤه
+counters() or counter()    <==========>   وظيفة - تضيف قيمة عداد إلى عنصر       */
+
+ /* #038 - Vendor Prefixes 
+
+webseit ..can i use... we can there test if the some code support in browesr or not */
+
+/* #040 - Box Shadow And Examples 
+
+box-shadow  <==========>   تُستخدم خاصية لتطبيق ظل واحد أو أكثر على عنصر
+color       <==========>   تحدد المعلمة لون الظل
+blur        <==========>   تحدد المعلمة نصف قطر التمويه. كلما زاد الرقم ، زاد ضبابية الظل
+spread      <==========>   تحدد المعلمة نصف قطر الانتشار. تزيد القيمة الموجبة من حجم الظل ، بينما تقلل القيمة السالبة من حجم الظل.
+inset       <==========>   تقوم المعلمة بتغيير الظل من الظل الخارجي الي الذاخلي */
+/* #041 - The Box Model And Box Sizing
+
+box-sizing    <==========>   تتيح لنا خاصية تضمين المساحة المتروكة والحد في العرض والارتفاع الكليين للعنصر.
+border-box;   <==========>   إذا قمت بالتعيين على عنصر ، فسيتم تضمين المساحة المتروكة والحد في العرض والارتفاع: */
+
+/* #042 - Transition
+
+transition                     <==========>     خاصية مختصرة لتعيين خصائص الانتقال الأربعة في خاصية واحدة
+   اختصار جميع وظائف الخاصيه     ====  transition: all,0.2s 0.1s linear;
+transition-delay               <==========>     يحدد التأخير بالثواني لتأثير الانتقال
+transition-duration            <==========>     يحدد عدد الثواني أو المللي ثانية التي يتطلبها تأثير الانتقال لإكمالها
+transition-property            <==========>     يحدد اسم خاصية التي يكون لها تأثير الانتقال الطول او العرض
+transition-timing-function     <==========>     
+         ease-                     ====       يحدد تأثير انتقال ببداية بطيئة ، ثم سريعة ، ثم تنتهي ببطء (هذا افتراضي)
+         linear-                   ====       يحدد تأثير الانتقال بنفس السرعة من البداية إلى النهاية
+         ease-in-                  ====       يحدد تأثير انتقال مع بداية بطيئة
+         ease-out-                 ====       يحدد تأثير الانتقال بنهاية بطيئة
+         ease-in-out-              ====        يحدد تأثير الانتقال مع بداية ونهاية بطيئين
+         cubic-bezier(n,n,n,n)-    ====        يتيح لك تحديد القيم الخاصة بك في دالة مكعب بيزير                                  
+                                   
+                                   */
+
+/* !Important Declaration And Use Cases
+
+!important   <==========>  تُستخدم القاعدة لإضافة أهمية أكبر لخاصية / قيمة من المعتاد
+!important   <==========>  في الواقع ، إذا استخدمت القاعدة ، فستتجاوز جميع قواعد التصميم السابقة لتلك الخاصية المحددة على هذا العنصر */
+                               
+ /* #044 - The Margin Collapse 
+
+ يتم أحيانًا طي الهوامش العلوية والسفلية للعناصر في هامش واحد يساوي أكبر الهامشين.
+
+هذا لا يحدث على الهامش الأيمن والأيسر! فقط الهوامش العلوية والسفلية! */
+
+/* - #045 - CSS Variables And Trainings 
+
+var()          <==========>     تُستخدم الوظيفة لإدخال قيمة متغير   
+:root          <==========>     محدد جذر العنصر او اللون الرئسي المراد استخدامه في المتغير
+  --namecoler      ====           بداية كتابة الجدر بي 
+  :root { --deenColer : rgb(0, 247, 255) ;}
+Fallbacks      <==========>      اضافة لون احتياطي في الكود لسبب حدوث اي مشكله في اللون الذي في الجدر */
+
+/* #046-#053  Flex Box Parent - Direction, Wrap, Flow
+#047 - Flex Box Parent - Justify Content
+#048 - Flex Box Parent - Align Items
+#049 - Flex Box Parent - Align Content
+#050 - Flex Box Child - Grow, Shrink, Order
+#051 - Flex Box Child - Flex Basis, Flex Shorthand
+#052 - Flex Box Child - Align Self, Games, Task
+#053 - Finish Flex Froggy Game
+Flexbox          <==========>  تسهل وحدة تخطيط الصندوق المرن تصميم هيكل تخطيط سريع الاستجابة مرن دون استخدام تعويم أو تحديد الموضع
+display:flex ;   <==========>   تصبح الحاوية المرنة مرنة عن طريق ضبط الخاصية على اولا
+flex-direction   <==========>  تحدد الخاصية في أي اتجاه تريد الحاوية تكديس العناصر المرنة.
+              colum  ====  تكدس القيمة العناصر المرنة عموديًا من أعلى إلى أسفل
+     column-reverse  ====  تكدس القيمة العناصر المرنة عموديًا من اسفل الي الاعلي
+                row  ====  تكدس القيمة العناصر المرنة أفقيًا من اليسار إلى اليمين
+        row-reverse  ====  تكدس القيمة العناصر المرنة أفقيًا من اليمين الي اليسار
+
+flex-wrap        <==========>  تحدد الخاصية ما إذا كان يجب التفاف العناصر المرنة أم لا
+               wrap  ====  تحدد القيمة أن العناصر المرنة ستلتف إذا لزم الأمر:
+       wrap-reverse  ====  تحدد القيمة أن العناصر المرنة ستلتف إذا لزم الأمر ، بترتيب عكسي
+             nowrap  ====  تحدد القيمة أن العناصر المرنة لن تلتف هذا افتراضي 
+
+flex-flow        <==========>  الخاصية هي خاصية مختصرة لتعيين كل من الخصائص السابقه في سطر واحد
+
+justify-content  <==========>  تُستخدم الخاصية لمحاذاة العناصر المرنة
+             center  ====   تقوم القيمة بمحاذاة العناصر المرنة في وسط الحاوية
+         flex-start  ====   تقوم القيمة بمحاذاة العناصر المرنة في بداية الحاوية هذا افتراضي
+           flex-end  ====   تقوم القيمة بمحاذاة العناصر المرنة في نهاية الحاوية
+       space-around  ====   تعرض القيمة العناصر المرنة بمسافة قبل السطور ، وبينها ، وبعدها:
+      space-between  ====   تعرض القيمة العناصر المرنة مع وجود مسافة بين السطور:
+
+align-items      <==========>   يتم استخدام الخاصية لمحاذاة العناصر المرنة.
+             center  ====   تقوم القيمة بمحاذاة العناصر المرنة في منتصف الحاوية:
+         flex-start  ====   تقوم القيمة بمحاذاة العناصر المرنة أعلى الحاوية:
+           flex-end  ====   تقوم القيمة بمحاذاة العناصر المرنة أسفل الحاوية:
+            stretch  ====   تمد القيمة العناصر المرنة لملء الحاوية هذا افتراضي
+           baseline  ====   تقوم القيمة بمحاذاة العناصر المرنة مثل محاذاة خطوطها الأساسية:
+
+align-content    <==========>  يتم استخدام الخاصية لمحاذاة الخطوط المرنة.
+            center  ====   تقوم القيمة بمحاذاة العناصر المرنة في وسط الحاوية
+        flex-start  ====   تعرض القيمة الخطوط المرنة في بداية الحاوية:
+          flex-end  ====   تعرض القيمة الخطوط المرنة في نهاية الحاوية: 
+           stretch  ====   تمد القيمة الخطوط المرنة لتشغل المساحة المتبقية 
+     space-between  ====   تعرض القيمة الخطوط المرنة بمسافة متساوية بينها:
+      space-around  ====   تعرض القيمة الخطوط المرنة بمسافة قبلها وبعدها:
+
+
+order        <==========>   تحدد الخاصية ترتيب العناصر المرنة.
+flex-grow    <==========>   تحدد الخاصية مقدار زيادة العنصر المرن بالنسبة لبقية العناصر المرنة.
+flex-shrink  <==========>   تحدد الخاصية مقدار تقلص العنصر المرن بالنسبة لبقية العناصر المرنة.
+flex-basis   <==========>   تحدد الخاصية الطول الأولي للعنصر المرن.
+align-self   <==========>   تحدد الخاصية محاذاة العنصر المحدد داخل الحاوية المرنة 
+
+display : inline - flex   <==========> السطر الاول المراد وضع العنصر بجانبه
+display : inline - block  <==========>  العنصر التاني المراد وضعه بجاتب السطر الاول
+
+اجعل العنصر المرن الثالث غير قابل للنمو  ، وغير قابل للتقلص  ، وبطول أولي يبلغ 200 بكسل
+ style="flex: 0 0 200px" <==========> الخاصيه المختصره لي كل الكود 
+
+توسيط مثالي
+في المثال التالي سنحل مشكلة نمط شائعة جدًا: تمركز مثالي.
+SOLUTION: Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered:
+
+line-height     <==========>     تحدد الخاصية ارتفاع الخط. */
+
+/* #054 - Filters
+
+Filters  <==========>  تحدد الخاصية التأثيرات علي الصور
+
+
+انواع التأثيرات
+
+filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() 
+| hue-rotate() | invert() | opacity() | saturate() | sepia() | url(); */
+
+/* #055 - Gradients
+ثلاثة أنواع من التدرجات: 
+(تنخفض / لأعلى / يسار / يمين / قطريً)التدرجات الخطية 
+(محددة بمركزها)التدرجات الشعاعية 
+(تدور حول نقطة مركزية)التدرجات المخروطية 
+
+                 linear-gradient <====> التدرجات الخطية 
+
+Top to Bottom                 <==========>      الاتجاه - من أعلى إلى أسفل  الافتراضي                                      background-image: linear-gradient(red, yellow);
+Left to Right                 <==========>      الاتجاه - من اليسار إلى اليمين                                            background-image: linear-gradient(to right, red , yellow);
+Diagonal                      <==========>      الاتجاه - قطري                                                             background-image: linear-gradient(to bottom right, red, yellow);
+Using Different Angles        <==========>      باستخدام الزوايا                                                          background-image: linear-gradient(180deg, red, yellow);
+Repeating a linear-gradient   <==========>     تُستخدم وظيفة التدرج الخطي المتكرر () لتكرار التدرجات اللونية الخطية:   background-image: repeating-linear-gradient(red, yellow 10%, green 20%);                                    */
+
+/* #056 - Pointer Events And Caret Color
+
+caret-color         <==========>     textareas    تحدد الخاصية لون المؤشر في المدخلات أو أي عنصر قابل للتحرير.
+pointer-events      <==========>                 تحدد الخاصية ما إذا كان العنصر سيتفاعل مع أحداث المؤشر أم لا. */
+
+/*#057- #063 Grid - Parent - Template Columns 
+#058 - Grid - Parent - Template Rows And Gap
+#059 - Grid - Parent - Justify Content And Align Content
+#060 - Grid - Parent - Complete Layout With Template Areas
+#061 - Grid - Child  - Grid Column And Grid Row
+#062 - Grid - Child - Grid Area And Trainings
+#063 - Grid - Min, Max And Auto Fill
+Grid                     <==========>   توفر  نظام تخطيط قائم على الشبكة ، مع صفوف وأعمدة ، مما يسهل تصميم صفحات الويب دون الحاجة إلى استخدام العوامات وتحديد المواقع.
+display: grid;           <==========>   تعين الخاصيه عند استعمال الشبكه
+display: inline-grid;    <==========>   تعين الخاصيه عند استعمال الشبكه
+column                   <==========>   تسمى الخطوط الرأسية لعناصر الشبكة بالأعمدة 
+column-gap               <==========>    الفراغات بين كل عمود / صف تسمى فجوات 
+row                      <==========>    تسمى الخطوط الأفقية لعناصر الشبكة بالصفوف 
+row-gap                  <==========>    الفراغات بين كل عمود / صف تسمى فجوات 
+gap   (row) (coluns)     <==========>   الخاصية هي خاصية مختصرة للفجوات الافقيه والعموديه     <==========>                       gap: 50px 100px
+grid-template-columns    <==========>   تحدد الخاصية عدد الأعمدة في تخطيط الشبكة ، ويمكنها تحديد عرض كل عمود.  <==========>     grid-template-columns: auto auto auto auto;
+grid-template-columns    <==========>   إذا كنت تريد أن يحتوي تخطيط شبكتك على 4 أعمدة ، فحدد عرض الأعمدة الأربعة ، أو "تلقائي" إذا كان يجب أن يكون لجميع الأعمدة نفس العرض.
+grid-template-columns    <==========>    يمكن أيضًا استخدام الخاصية لتحديد حجم عرض الأعمدة.                                       grid-template-columns: 80px 200px auto 40px;
+grid-template-rows       <==========>    تحدد الخاصية ارتفاع كل صف .
+justify-content          <==========>    تُستخدم الخاصية لمحاذاة الشبكة بالكامل داخل الحاوية.
+align-content            <==========>    تُستخدم الخاصية لمحاذاة الشبكة بالكامل داخل الحاوية عموديًا 
+repeat(4, auto)          <==========>    اضافة الاعمده بنفس القيه    <==========>                                                  grid-template-columns: repeat(4, auto) 1px 30px 30px;
+Fraction                 <==========>    تاخد الاجزاء المتبقيه من المساحه                                                          grid-template-columns: repeat(4, auto) ifr 30px 30px;
+grid-template-areas      <==========>    يمكن الإشارة إلى عناصر الشبكة المسماة بخاصية حاوية الشبكة.                              grid-template-areas: "logo logo  nav nav nav  "
+grid-area                <==========>    يمكن أيضًا استخدام الخاصية لتعيين أسماء لعناصر الشبكة.                                  grid-area: logo;
+grid-column              <==========>    تحدد الخاصية العمود  لوضع عنصر عليها .أنت تحدد مكان بدء العنصر وأين سينتهي العنصر.   grid-column: 1 / 5;
+grid-column: 1 / span 3  <==========>    ينم تحديد عنصر وليس عمود مع خاصية ال  span
+grid-row                 <==========>    تحدد الخاصية الصف الذي سيتم وضع عنصر فيه.أنت تحدد مكان بدء العنصر وأين سينتهي العنصر.
+auto-Fill                <==========>    باستخدام الملء التلقائي ، يكون كل شيء مماثلاً للاحتواء التلقائي ، باستثناء عدم طي المسارات الفارغة. */
+
+/* #065-#070 2D Transform - Scale
+#066 - 2D Transform - Rotate
+#067 - 2D Transform - Translate
+#068 - 2D Transform - Skew
+#069 - 2D Transform - Matrix
+#070 - Transform - Origin
+transform  <==========> باستخدام الخاصية يمكنك استخدام طرق التحويل ثنائية الأبعاد التالية          
+scale ()   <==========> تزيد الطريقة أو تنقص حجم العنصر وفقًا للمعلمات المعطاة للعرض والارتفاع                                    transform: scale(2.10) ;
+     scaleX () ==== تزيد الطريقة أو  تقلل من عرض العنصر
+     scaleY () ==== الطريقة تزيد أو تنقص ارتفاع العنصر 
+translate  <==========>    X والمحور Y تقوم الطريقة بنقل عنصر من موضعه الحالي وفقًا للمعلمات المعطاة للمحور                      transform: translate(50px, 100px);
+rotate ()  <==========>    تقوم الطريقة بتدوير عنصر في اتجاه عقارب الساعة أو عكس اتجاه عقارب الساعة وفقًا لدرجة معينة.          transform: rotate(20deg);
+Degrees / Deg  ====  وحدة قياس الدراجات
+skew ()     <==========>    تقوم الطريقة بإمالة عنصر على طول المحور X و Y بالزوايا المعطاة.
+    skew Y ()  ====  تقوم الطريقة بإمالة عنصر على طول المحور بالزاوية المعطاة
+    skew X ()  ====  تقوم الطريقة بإمالة عنصر على طول المحور بالزاوية المعطاة.
+matrix ()   <==========>  تجمع هذه الطريقة بين جميع طرق التحويل ثنائية الأبعاد في طريقة واحدة
+ المعلمات هي كما يلي 
+matrix           (scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+                     -         -        -       -            -              -   
+transform: matrix(   1,      -0.3,      0,      1,           0,             0);
+
+transform-origin  <==========> تتيح لك الخاصية تغيير موضع النقطه التي يدور حولهاالعناصر    transform-origin: center left ; */
+           
+/* #071 - 3D Transform - Rotate           
+#072 - 3D Transform - Translate, Perspective, Perspective Origin
+#073 - 3D Transform - Backface Visibility And Flip Product
+
+rotate X ()   <==========>   تقوم الطريقة بتدوير عنصر حول محوره عند درجة معينة
+rotate Y ()   <==========>   تقوم الطريقة بتدوير عنصر حول المحور الصادي الخاص به عند درجة معينة
+rotate Z ()   <==========>   تقوم الطريقة بتدوير عنصر حول المحور الخاص به عند درجة معينة:
+transform: rotate3d(   10,        10,        10,          20deg);
+                     axis X      axis Y     axis Z        angle
+translate3d         <==========>   هي وظيفة تحويل ثلاثية الأبعاد تُستخدم لتحريك عنصر في مساحة ثلاثية الأبعاد. transform: translate3d(-100px, -30px, 50px); 
+perspective         <==========>  تُستخدم الخاصية لإعطاء عنصر ثلاثي الأبعاد بعض المنظور.
+perspective         <==========>  تحدد الخاصية مدى بعد الكائن عن المستخدم. لذلك ، ستؤدي القيمة الأقل إلى تأثير ثلاثي الأبعاد أكثر كثافة من القيمة الأعلى.وتوضع في العنصررالاب  perspective: 800px;
+perspective-origin  <==========>  تحدد الخاصية المكان الذي ينظر فيه المستخدم إلى العنصر ثلاثي الأبعاد.   perspective-origin: left; 
+perspective: 300px; perspective-origin <==========>  توضع في ااعنصر الاب 
+transform-style     <==========>    تحدد الخاصية كيفية عرض العناصر المتداخلة في مساحة ثلاثية الأبعاد.
+flat                   <====> يحدد أن العناصر الفرعية لن تحتفظ بموضعها ثلاثي الأبعاد. هذا هو الافتراضي        transform: rotateY(60deg);
+preserve-3d	           <====> يحدد أن العناصر الفرعية ستحتفظ بموضعها ثلاثي الأبعاد                            transform-style: preserve-3d;
+backface-visibility <==========>    تحدد الخاصية ما إذا كان يجب أن يكون الوجه الخلفي للعنصر مرئيًا عند مواجهة المستخدم أم لا.,,,,, هذه الخاصية مفيدة عند تدوير عنصر. يتيح لك اختيار ما إذا كان يجب على المستخدم رؤية الوجه الخلفي أم لا.
+
+
+
+
+#074 - Animation - KeyFrames, Name, Duration
+#075 - Animation - Iteration Count, Timing Function, Spinner Loading
+#076 - Animation - Direction, Fill Mode, Play State, Delay
+#077 - Up And Down Loading Animation Training
+
+@keyframes             <==========>  عند تحديد أنماط  داخل  القاعدة ، ستتغير الرسوم المتحركة تدريجيًا من النمط الحالي إلى النمط الجديد في أوقات معينة. 
+from {background-color: red;}  في المثال أعلاه ، حددنا متى سيتغير النمط باستخدام الكلمات الرئيسية "من" و "إلى" 
+to {background-color: yellow;} من الممكن أيضًا استخدام النسبة المئوية. باستخدام النسبة المئوية ، يمكنك إضافة أي عدد تريده من تغييرات النمط.
+
+animation-name            <==========>  يحدد اسم الرسوم المتحركة      animation-name: example;
+animation-duration        <==========>  ملاحظة: . إذا لم يتم تحديد الخاصية ، فلن تحدث حركة ، لأن القيمة الافتراضية هي 0 ثانية .....تحدد الخاصية المدة التي يجب أن تستغرقها الرسوم المتحركة حتى تكتمل  animation-duration: 4s;
+
+animation-iteration-count <==========> تحدد الخاصية عدد مرات تشغيل الرسم المتحرك.
+                   infinite  <====> يستخدم  القيمة  لجعل الحركة تستمر إلى الأبد لانهائية
+animation-iteration-count:3; <====> تحدد عدد مرات تشغيل الرسم المتحرك
+
+animation-timing-function <==========>  تحدد الخاصية منحنى سرعة الرسم المتحرك 
+      ease-                  <====>  يحدد رسمًا متحركًا ببداية بطيئة ، ثم سريعة ، ثم تنتهي ببطء (هذا افتراضي)
+      linear-                <====> يحدد رسمًا متحركًا بنفس السرعة من البداية إلى النهاية
+      ease-in-               <====> يحدد رسمًا متحركًا ببداية بطيئة
+      ease-out-              <====> يحدد رسمًا متحركًا بنهاية بطيئة
+      ease-in-out-           <====> يحدد رسمًا متحركًا ببداية ونهاية بطيئين
+      cubic-bezier(n,n,n,n)- <====> يتيح لك تحديد القيم الخاصة بك في دالة مكعب بيزير
+
+animation-fill-mode      <==========>   تحدد الخاصية نمطًا للعنصر الهدف عندما لا يتم تشغيل الرسوم المتحرك قبل أن تبدأ ، أو بعد انتهائها ، أو كليهم 
+                      none  <====>  القيمة الافتراضية. لن تطبق الرسوم المتحركة أي أنماط على العنصر قبل أو بعد تنفيذه
+                 forwards   <====>  سيحتفظ العنصر بقيم النمط التي تم تعيينها بواسطة الإطار الرئيسي الأخير يعتمد على اتجاه الرسوم المتحركة وعدد مرات تكرار الرسوم المتحركة
+                 backwards  <====>  سيحصل العنصر على قيم النمط التي تم تعيينها بواسطة الإطار الرئيسي الأول يعتمد على اتجاه الرسوم المتحركة، ويحتفظ بها أثناء فترة تأخير الرسوم المتحركة
+                      both  <====>  ستتبع الرسوم المتحركة القواعد للأمام وللخلف ، لتوسيع خصائص الحركة في كلا الاتجاهين
+
+animation-delay          <==========>    تحدد الخاصية تأخيرًا لبدء الرسم المتحرك .               animation-delay: 2s;
+
+animation-direction      <==========>    تحدد الخاصية ما إذا كان يجب تشغيل الرسوم المتحركة للأمام أو للخلف أو في دورات بديلة
+                   normal   <====>    يتم تشغيل الرسوم المتحركة كالمعتاد هذا هو الافتراضي
+                   reverse  <====>  (للخلف)   يتم تشغيل الرسوم المتحركة في الاتجاه المعاكس 
+                 alternate  <====>  يتم تشغيل الرسوم المتحركة للأمام أولاً ، ثم للخلف
+        alternate-reverse   <====> يتم تشغيل الرسوم المتحركة بشكل عكسي أولاً ، ثم إلى الأمام
+
+animation-play-state     <==========>    تحدد الخاصية ما إذا كانت الرسوم المتحركة قيد التشغيل أو متوقفة مؤقتًا .
+                   running  <====>   تشغيل 
+                   paused   <====>    توقف  
+
+animation                <==========>    يمكن تحقيق نفس تأثير الحركة على النحو الوارد أعلاه باستخدام خاصية الاختزال:
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+
+                          name           duration     timing-function      delay        iteration-count             direction
+                           -                -               -                -                 -                        -
+animation:              example            5s             linear             2s             infinite                 alternate;
+
+####################################################################################################################################
+
+#078 - CSS Selectors Reference Part 1
+#079 - CSS Selectors Reference Part 2
+#080 - CSS Selectors Reference Part 3
+#081 - CSS Selectors Reference Part 4
+#082 - CSS Selectors Reference Part 5
+
+
+#id	                     #firstname         Selects the element with id="firstname"
+.class	                 intro              Selects all elements with class="intro"
+element.class	         p.intro            Selects only <p> elements with class="intro"
+*	                     *	                Selects all elements
+element	                 p	                Selects all <p> elements
+element,element,..	     div, p             Selects all <div> elements and all <p> elements 
+element>element	         div > p	        Selects all <p> elements where the parent is a <div> element
+.class1.class2	        .name1.name2	    Selects all elements with both name1 and name2 set within its class attribute
+element+element	        div + p	            Selects the first <p> element that is placed immediately after <div> elements
+element1~element2	    p ~ ul	            Selects every <ul> element that is preceded by a <p> element
+[attribute]	            [target]	        Selects all elements with a target attribute
+[attribute=value]	    [target=_blank]	    Selects all elements with target="_blank"
+[attribute~=value]	    [title~=flower]	    Selects all elements with a title attribute containing the word "flower"
+[attribute*=value]	   a[href*="w3schools"]	Selects every <a> element whose href attribute value contains the substring "w3schools"
+[attribute^=value]	   a[href^="https"]	    Selects every <a> element whose href attribute value begins with "https"
+:first-child	        p:first-child	     Selects every <p> element that is the first child of its parent
+:last-child             p:last-child	     Selects every <p> element that is the last child of its parent
+:last-of-type	        p:last-of-type	     Selects every <p> element that is the last <p> element of its parent
+:first-of-type	        p:first-of-type	     Selects every <p> element that is the first <p> element of its parent
+:only-child   	        p:only-child	     Selects every <p> element that is the only child of its parent
+:only-of-type	        p:only-of-type	     Selects every <p> element that is the only <p> element of its parent
+:not(selector)	        :not(p)	             Selects every element that is not a <p> element
+:nth-child(n)	        p:nth-child(2)	     Selects every <p> element that is the second child of its parent
+nth-last-child(n)	    p:nth-last-child(2)	 Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-of-type(n)   	    p:nth-of-type(2)	 Selects every <p> element that is the second <p> element of its parent
+:checked	            input:checked	     Selects every checked <input> element
+:empty	                p:empty	             Selects every <p> element that has no children (including text nodes)
+:disabled	            input:disabled	     Selects every disabled <input> element
+:required	            input:required	     Selects input elements with the "required" attribute specified
+
+####################################################################################################################################
+
+#083 - Media Queries And Responsive Designs Intro
+#084 - Media Queries And Responsive Designs Standards
+#085 - Media Queries And Responsive Designs Practice
+
+@media  <==========> تُستخدم القاعدة في استعلامات الوسائط لتطبيق أنماط مختلفة لأنواع / أجهزة وسائط مختلفة.    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+   all     =====   افتراضي  تستخدم لجميع انوع أجهزةالوسائط
+   print   =====   تستخدم للطباعه
+   screen  =====   تستخدم لشاشات الكمبيوتر والأجهزة اللوحية والهواتف الذكية وما إلى ذلك.
+   speech  =====   تُستخدم لقراء الشاشة الذين "يقرأون" الصفحة بصوت عالٍ
+
+يمكن استخدام استعلامات الوسائط للتحقق من أشياء كثيرة ، مثل:
+عرض وارتفاع منفذ العرض
+عرض الجهاز وارتفاعه
+الاتجاه هل الجهاز اللوحي / الهاتف في الوضع الأفقي أو الرأسي
+الدقة
+
+يوضح المثال التالي قائمة ستطفو على يسار الصفحة إذا كان عرض إطار العرض 480 بكسل أو عرضه (إذا كان إطار العرض أقل من 480 بكسل ، فستكون القائمة أعلى المحتوى):
+
+مثال
+@media screen and {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+ 
+width stander of screens
+
+/* mobile 
+
+@media (max-width: 767px) */
+
+
+/* small screens
+
+@media (mix-width: 768px)  and (min-width: 991px) */
+
+
+/* meidum screens
+
+@media (min-width: 992px) */
+
+/* X largs screens
+
+@media (min-width: 1400px) */
+
+
+/* custom
+
+@media (max-width: 1199px) 
+
+
+
+#086 - Create Your Framework
+
+
+
+
+
+#87 - CSS Global Values
+
+inherit   <==========>   تحدد الكلمة الأساسية أن الخاصية يجب أن ترث قيمتها من عنصرها الأصلي
+
+initial   <==========>   يتم استخدام الكلمة الأساسية لتعيين خاصية إلى قيمتها الافتراضية
+
+unset     <==========>   يغير جميع الخصائص المطبقة على العنصر أو أصل العنصر إلى قيمته الأصلية إذا كانت قابلة للتوريث أو إلى قيمتها الأولية إذا لم تكن كذلك
+
+
+
+
+#88 - The End And How To Master HTML And CSS
+
+
+
+*/
+
+
+/* 
+  جميع الطرق لتوسيط العناصر أفقيا وعرضيا داخل العنصر الأب
+
+
+Negative Margin            <==========>   margin: 40px auto;
+position: absolute;        <==========>   margin-top: -37.5px; margin-left: -75px; left: 50%;   top: 50%;
+transform                  <==========>   translate(-50%, -50%); 
+Flex Box                   <==========>   display: flex; justify-content: center;align-items: center; */
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
